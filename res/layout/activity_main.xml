@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+<RelativeLayout android:id="@+id/adcontainer"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">
+	</RelativeLayout>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="手速测速器"
+        android:background="@drawable/textbg"
+        android:textColor="#4cf4d2"
+        android:textSize="50sp"
+        />
+    <LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+        	android:text="剩余时间"
+        	android:textColor="#77caec"
+       	 android:textSize="40sp"
+       	 android:layout_weight="1"
+            />
+        <TextView 
+            android:id="@+id/tv_time"
+            	android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+                android:background="@drawable/textbg"
+        	android:text="10"
+        	android:textColor="#f1596e"
+       		 android:textSize="40sp"
+       	 	android:layout_weight="1"
+            />
+    </LinearLayout>
+  <Button
+     android:id="@+id/tvdj"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="疯狂点击此区域！！！！"
+     android:background="@drawable/tvbg"
+      android:textSize="20sp"
+      />
+  
+</LinearLayout>
